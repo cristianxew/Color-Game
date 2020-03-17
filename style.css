@@ -1,0 +1,92 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1{
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    color: white;
+    background: steelblue;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay{
+    font-size: 200%;
+}
+
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 400ms;
+    --webkit-transition: background 400ms;
+    -moz-transition: background 400ms;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#stripe{
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected{
+    color: white;
+    background: steelblue;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    transition: all 350ms;
+    --webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    outline: none;
+}
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+@media (max-width: 435px) {
+    #stripe{
+        display: flex;
+        height: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+    }
+    .square{
+        margin: 1.5%;
+    }
+    #colorDisplay{
+        font-size: 120%;
+    }
+    #message{
+        width: 15%;
+    }
+    
+}
